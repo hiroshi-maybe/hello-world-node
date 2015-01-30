@@ -1,12 +1,12 @@
 {
-  "version": "0.0.1",
-  "private": true,
-  "name": "hello-world-node",
-  "description": "A Node app just saying 'hello world'",
-  "repository": "https://github.com/k-ori/hello-world-node",
-  "license": "MIT",
-  "devDependencies": {
-  },
-  "scripts": {
-  }
+	"version": "0.0.1",
+  	"private": true,
+  	"name": "hello-world-node",
+  	"description": "A Node app just saying 'hello world'",
+  	"repository": "https://github.com/k-ori/hello-world-node",
+  	"license": "MIT",
+  	"dependencies": {
+		"express": "~4.11.1"
+  	},
+  	"scripts": {}
 }

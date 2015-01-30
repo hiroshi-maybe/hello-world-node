@@ -1,15 +1,14 @@
-var sys = require( "sys" );
-var http = require( "http" );
- 
-// Create an HTTP server.
-var server = http.createServer(function(request, response) {
-  response.writeHead(200, {"content-type": "text/plain"});
-  response.write("Hellow world!\n");
-  response.end();
-});
- 
-// Listen to port 8080
-server.listen(8080);
+var express = require('express'),
+    app = express();
 
-// Logging 
-sys.puts( "Server is running on 8080" );
+app.get('/', function (req, res) {
+  res.send('Hello World!');
+});
+
+var server = app.listen(3000, function () {
+  var host = server.address().address,
+      port = server.address().port;
+
+  console.log('Example app listening at http://%s:%s', host, port);
+
+});
